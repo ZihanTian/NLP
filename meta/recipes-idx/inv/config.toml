@@ -1,0 +1,10 @@
+stop-words = "stopwords.txt"
+prefix = "."
+query-judgements = "recipes/recipes-qrels.txt"
+index = "recipes-idx"
+corpus = "tutorial.toml"
+dataset = "recipes"
+[[analyzers]]
+	filter = "default-unigram-chain"
+	ngram = 1
+	method = "ngram-word"
